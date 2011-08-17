@@ -1,0 +1,15 @@
+#sidebar.fourCol
+  .rowContainer.group.twelveCol
+    %h1 About
+    %p.about
+      This is a demo site for legibilis, a blog theme for the Nesta CMS. It 
+      features a simple aesthetic, responsive web design, and a focus on readability.
+    %p
+      You'll find the installation instructions here:
+      %a{:href=>"http://jamesabbottdd.com/legibilis"} Legibilis installation instructions,
+      and the Github repository here:
+      %a{:href=>"https://github.com/abbottjam/nesta-theme-legibilis"} Legibilis on GitHub.
+      Future developments to the theme will be announced here.
+    = haml :categories, :layout => false
+    = haml :links, :layout => false
+    = haml :gallery, :layout => false
