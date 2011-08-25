@@ -259,7 +259,9 @@ p.meta a:active {
 }
 
 /*first paragraph in excerpt / article positioned relative to render the dropcap:*/
-p.article-excerpt {position: relative;}
+section.articles article>header+p,
+body.article article[role=main]>h1+p {position: relative;}
+
 *.dropcap {
     position: absolute;
     top: -60px;

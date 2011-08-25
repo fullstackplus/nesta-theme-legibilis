@@ -30,14 +30,14 @@ function createDropCappedParagraph(article) {
     text = text.trim();
     var first_letter = text.substr(0,1)
     text = text.slice(1);
-    var t = document.createTextNode(text);
+    var wrapper = document.createElement("span");
+    wrapper.innerHTML = text;
     var dropcap = document.createElement("span");
     dropcap.className = "dropcap";
     dropcap.innerHTML = first_letter
     var dcpar = document.createElement("p");
-    dcpar.style.position = "relative";
     dcpar.appendChild(dropcap);
-    dcpar.appendChild(t);
+    dcpar.appendChild(wrapper);
     article.insertBefore(dcpar, pars[0]);
     article.removeChild(pars[1]);
 }
