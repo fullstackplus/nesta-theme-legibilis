@@ -226,8 +226,6 @@ article[role="main"]>footer span {
 
 article[role="main"]>footer span.signature:after {content: '\2619';}
 
-p {text-align: justify;}
-
 p.meta {
     font-family: 'Trebuchet MS';
     font-size: 11px;
@@ -308,7 +306,7 @@ section.articles>header>h1 {
     line-height: 20px;
     margin: 20px 0;
     letter-spacing: 3px;
-    text-align: right;
+    text-align: left;
     text-transform: uppercase;
 }
 
@@ -318,7 +316,6 @@ section.articles>header>h1 {
     line-height: 20px;
     letter-spacing: .3px;
     margin-bottom: 20px;
-    text-align: justify;
 }
 
 #sidebar p.about {
@@ -340,7 +337,6 @@ nav.categories ul.menu a {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-family: 'Trebuchet MS';
-    text-align: right;
 }
 
 nav.categories ul.menu a:link,
